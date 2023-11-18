@@ -24,4 +24,4 @@
 
 | Main Screen | Details Screen |
 | ----------- | ---------------- |
-| ![Main Screen](resim1) | ![Details Screen](resim2)
+| <img src="https://github.com/ogzkesk/FilmApp/blob/master/resim1.png" width="270"> | ![Details Screen](resim2)
