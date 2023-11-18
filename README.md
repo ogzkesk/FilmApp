@@ -5,12 +5,6 @@
 ## Description
 <p>This application is the final project of the Pazarama iOS Bootcamp, developed as a team effort, and it involves listing and detailing Movie and Series using data obtained from omdbapi.com</p>
 
-## Technologies and Libraries
-- Protocol Oriented Programming
-- URLSession
-- Programmatically UI
-- MVVM
-- Singleton Pattern
 
 ## Contributors
 - [Oğuz Keskin]
