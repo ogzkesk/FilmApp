@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark">
+
+
+        <ImageView
+            android:id="@+id/errorImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/error" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutDetail"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewBackgroundDetailPoster"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/background_example" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mask_gradient"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/mask_gradient" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewTitleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginTop="44dp"
+                android:letterSpacing="0.1"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Spider-Man No Way Home" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewForegroundDetailPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="95dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="150dp"
+                tools:src="@drawable/background_example" />
+
+            <LinearLayout
+                android:id="@+id/containerAttribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewForegroundDetailPoster"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="-35dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textViewReleaseDateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_calendar"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/grey"
+                    tools:text="2021" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/firstDividerDetail"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="12dp"
+                    app:dividerColor="@color/dark_grey"
+                    app:dividerThickness="1dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textViewDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_duration"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/grey"
+                    tools:text="148 Minutes" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/secondDividerDetail"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="12dp"
+                    app:dividerColor="@color/dark_grey"
+                    app:dividerThickness="1dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textViewGenreDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_genre"
+                    android:drawablePadding="6dp"
+                    android:maxLines="1"
+                    android:textColor="@color/grey"
+                    tools:text="Action" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewRatingDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/containerAttribute"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_rating_textview"
+                android:drawablePadding="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/orange"
+                android:textSize="12sp"
+                app:drawableLeftCompat="@drawable/ic_star"
+                app:drawableTint="@color/orange"
+                tools:text="4.5" />
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_cast_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-40dp"
+            android:text="@string/cast"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayoutDetail" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_cast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white_grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cast_title"
+            tools:text="Oguz Keskin, Omer Guzel" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewOverviewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/overview"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cast" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/overview"
+            android:textColor="@color/white_grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewOverviewTitle"
+            tools:text="Originally a story from Archie Comics which started in 1941, Riverdale centres around a group of high school students who are shocked by the death of classmate, Jason Blossom. Together theyunravel the secrets of Riverdale and who More" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminateTint="@color/white_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            style="@style/Widget.Material3.Button.IconButton"
+            app:icon="@drawable/ic_arrow_back"
+            android:id="@+id/btn_back"
+            app:iconTint="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

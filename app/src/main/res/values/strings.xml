@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Film App</string>
+    <string name="search">Search…</string>
+    <string name="we_are_sorry_we_can_not_find_the_movie">We are sorry cannot find the media</string>
+    <string name="find_your_movie_by_type_title_categories_years_etc">Find your media by type title.</string>
+    <string name="overview">Overview</string>
+    <string name="cast">Cast</string>
+    <string name="movie">Movie</string>
+    <string name="series">Tv Series</string>
+</resources>
