@@ -3,7 +3,7 @@
 </h1>
 
 ## Description
-<p>This application is the final project of the Pazarama iOS Bootcamp, developed as a team effort, and it involves listing and detailing Movie and Series using data obtained from omdbapi.com</p>
+<p>This application is the project of the Pazarama Android Bootcamp, developed as a team effort, and it involves listing and detailing Movie and Series using data obtained from omdbapi.com</p>
 
 
 ## Contributors
