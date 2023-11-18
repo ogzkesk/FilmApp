@@ -1,5 +1,3 @@
-# FilmApp
-
 <h1 align="center">
      Movie App
 </h1>
@@ -26,4 +24,4 @@
 
 | Main Screen | Details Screen |
 | ----------- | ---------------- |
-| ![Main Screen](resim1) | ![Favourite Screen](resim2)
+| ![Main Screen](resim1) | ![Details Screen](resim2)
